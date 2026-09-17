@@ -159,3 +159,29 @@ automatically if they try the URL directly.
 - **CORS error in the browser** — check `FRONTEND_ORIGIN` in `.env`
   matches `http://localhost:5173`.
 
+## 📸 Frontend Screenshots
+
+### Login Page
+![Homepage](projectPhotos/login.png)
+
+### Student Dashboard
+![Dashboard]_(projectPhotos/dashboard.png)
+
+### Resume Analysis
+![Resume Analysis]_(projectPhotos/resume upload and analysis.png)
+## Placement prediction
+![Placement prediction]_(projectPhotos/placement prediction.png)
+
+##career recommendetion
+![Career recommendation]_(projectPhotos/career recommenation.png)
+
+##skill gap analysis
+![skill gap analysis]_(projectPhotos/skillgap analysis 1.png)
+![skill gap analysis]_(projectPhotos/skillgap analysis 2.png)
+
+##learning roadmap
+
+![Learning roadmap]_(projectPhotos/learning roadmap.png)
+
+
+
