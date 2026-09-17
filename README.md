@@ -159,11 +159,3 @@ automatically if they try the URL directly.
 - **CORS error in the browser** — check `FRONTEND_ORIGIN` in `.env`
   matches `http://localhost:5173`.
 
-## What's next
-
-That's all 9 modules. From here, natural next steps if you want to keep
-going: swap the synthetic training data for real historical placement
-records (same column names, `dataset.py` just needs a different
-source), add pagination to the Admin students table once you have real
-volume, or add a way to promote a user to admin from within the Admin
-Dashboard itself instead of doing it manually in Compass.
