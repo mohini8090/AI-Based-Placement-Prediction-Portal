@@ -1,0 +1,22 @@
+{
+  "placement_clf": {
+    "accuracy": 0.77,
+    "f1": 0.811217510259918
+  },
+  "package_reg": {
+    "mae_lpa": 0.6524730323681218
+  },
+  "career_clf": {
+    "accuracy": 0.4825,
+    "classes": [
+      "Backend Developer",
+      "Business Analyst",
+      "Core / Hardware Engineer",
+      "Data Scientist / ML Engineer",
+      "DevOps / Cloud Engineer",
+      "Frontend Developer",
+      "QA / Test Engineer",
+      "Software Development Engineer"
+    ]
+  }
+}

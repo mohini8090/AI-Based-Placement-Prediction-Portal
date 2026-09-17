@@ -1,0 +1,91 @@
+:root {
+  --ink-950: #0d1120;
+  --ink-900: #12182b;
+  --ink-800: #1a2138;
+  --ink-700: #232c48;
+  --ink-600: #2f3a5c;
+  --line: rgba(255, 255, 255, 0.09);
+  --line-strong: rgba(255, 255, 255, 0.16);
+
+  --brass: #d9a441;
+  --brass-bright: #f0bf5f;
+  --teal: #4fb6a6;
+  --teal-bright: #6cd4c3;
+  --coral: #e0705a;
+  --coral-bright: #ef8b76;
+
+  --text-hi: #f5f2e9;
+  --text-mid: #b9c0d4;
+  --text-low: #7d87a3;
+  --text-ink: #1a2138;
+
+  --font-display: "Fraunces", "Iowan Old Style", serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", monospace;
+
+  --step--1: clamp(0.8rem, 0.78rem + 0.1vw, 0.875rem);
+  --step-0: clamp(1rem, 0.96rem + 0.2vw, 1.0625rem);
+  --step-1: clamp(1.2rem, 1.1rem + 0.5vw, 1.375rem);
+  --step-2: clamp(1.6rem, 1.4rem + 1vw, 2rem);
+  --step-3: clamp(2.2rem, 1.8rem + 2vw, 3.2rem);
+
+  --radius-s: 8px;
+  --radius-m: 14px;
+  --radius-l: 22px;
+  --max-width: 1180px;
+  --gutter: clamp(1.25rem, 4vw, 3rem);
+  --shadow-card: 0 20px 60px -25px rgba(0, 0, 0, 0.55);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--ink-900);
+  color: var(--text-hi);
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.1;
+  margin: 0 0 0.5em;
+  letter-spacing: -0.01em;
+}
+
+p { margin: 0 0 1em; color: var(--text-mid); }
+a { color: inherit; }
+
+:focus-visible {
+  outline: 2px solid var(--brass-bright);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.numeric { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-inline: var(--gutter);
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--brass-bright);
+}
+.eyebrow::before { content: ""; width: 18px; height: 1px; background: var(--brass-bright); }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+}
